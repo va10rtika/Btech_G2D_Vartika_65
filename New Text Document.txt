@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter a caharacter:");
+    scanf("%c", &ch);
+    if(ch >= 'A' && ch <= 'Z') {
+        ch = ch+32;
+    }
+    if(ch == 'a'|| ch == 'e'|| ch == 'i'|| ch == 'o'|| ch == 'u'){
+        printf("It is a Vowel");
+    }
+    else if(ch >= 'a'&& ch <= 'z'){
+        printf("It is a Consonant");
+    }
+    else{
+        printf("It's not an alphabet");
+    }
+    return 0;
+}
